@@ -136,7 +136,9 @@ body, html {
     display: block; /* Ensures links stack vertically */
     margin: 5px 0;
 }
-
+.foot_links a:hover{    
+    opacity: 50%;
+}
 .contact {
     color: white;
 }
@@ -227,22 +229,31 @@ p, a, button, h1, h2, h3, h4, h5, h6, span {
         
     }
     .footer {
-        flex-direction: column; /* Stack elements vertically */
-        padding: 48px; /* Adjust padding for smaller screens */
+        flex-direction: column; 
+        padding: 40px; 
     }
 
     .foot-about,
     .foot_links,
     .contact {
-        margin: 20px 0; /* Adds space between stacked elements */
+        margin: 20px 0; 
+        padding-left: 0;
     }
-
+    .foot_links a{
+        padding: 15px 0 15px 0;
+    }
+    .contact h1{
+        padding-left: 0;
+        padding-bottom: 10px;
+    }
+    .contact a{
+        padding-right:20px;
+        padding-left: 0;
+    }
+    
     .foot-logo {
-        flex-direction: column; /* Adjusts logo layout for small screens */
+        flex-direction: column; 
         align-items: flex-start;
     }
 
-    .contact a img {
-        margin-right: 5px;
-    }
   }
