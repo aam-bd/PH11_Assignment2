@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav{
+    height: 70px px;
+    width: 100%;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-elem{
+    /* flex:auto; */
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+}
+.nav-elem button{
+    background-color: orange;
+    border-radius: 15px;
+    color: white;
+    font-size: larger;
+    border: none;
+    padding: 15px 80px 15px 80px;
+    /* margin: 5px; */
+}
+.nav-elem button:hover{
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+}
+.navbar:first-child span{
+    font-size:xx-large;
+    font-weight: 900;
+}
+.nav-elem:nth-child(2) a{
+    padding: 20px;
+    font-size: 30px;
+}
+.nav-elem a{
+    text-decoration: none;
+}
+.nav-elem a:hover{
+    cursor: pointer;
+}
+.banner{
+    display: flex;
+    padding: 0px 96px 0px 96px;
+}
+.banner-text{
+    font-size: 40px;
+    padding-top: 100px;
+}
+.banner-text P{
+    font-size: 27px;
+    padding-top: 15px;
+}
+.banner-button{
+    background-color: black;
+    border-radius: 15px;
+    color: white;
+    font-size: large;
+    border: none;
+    padding: 15px 80px 15px 80px;
+    /* margin: 5px; */
+}
+.banner-button:hover{
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+}
+p, a, button, h1, h2, h3, h4, h5, h6, span {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+ }
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+ }
+@media screen and (max-width: 768px) {
+    .nav-elem:first-child span,
+    .nav-elem:nth-child(2),
+    .nav-elem:nth-child(3){
+      display: none;
+    }
+    
+    .nav-elem:first-child img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+    .navbar{
+        padding: 20px 20px 20px 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid orange;
+    }
+    
+    .nav-elem.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 10;
+        text-align: center;
+      }
+
+    .nav-elem.active a {
+        padding: 10px;
+        font-size: 20px;
+      }
+    .banner{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+        justify-content: center;
+    }
+    .banner-text{
+        font-size: 25px;
+        padding-top: 20px;
+        text-align: center;
+    }
+    .banner-text P{
+        font-size: 15px;
+        padding-top: 5px;
+    }
+  }
