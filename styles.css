@@ -80,6 +80,73 @@ body, html {
     color: black;
     cursor: pointer;
 }
+/* Footer */
+.footer {
+    display: flex;
+    background-color: #01acfd;
+    padding: 96px;
+    justify-content: space-between; 
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.foot-about,
+.foot_links,
+.contact {
+    flex: 1; 
+    /* margin: 0 20px;  */
+    min-width: 250px; 
+}
+.foot_links{
+    padding-left:150px;
+}
+.contact{
+    padding-left: 100px;
+}
+.contact a{
+    padding: 0px 10px 0px 10px;
+}
+.contact h1{
+    padding-bottom: 15px;
+    padding-left: 10px;
+}
+.foot-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-title {
+    font-size: 35px;
+    font-weight: 700;
+    color: white;
+}
+
+.vision {
+    font-size: 15px;
+    color: white;
+}
+
+.foot_links {
+    color: white;
+    font-size: 20px;
+}
+
+.foot_links a {
+    text-decoration: none;
+    color: white;
+    display: block; /* Ensures links stack vertically */
+    margin: 5px 0;
+}
+
+.contact {
+    color: white;
+}
+
+.contact a img {
+    margin-right: 10px; /* Adds space between icons */
+}
+
+
+
 p, a, button, h1, h2, h3, h4, h5, h6, span {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
@@ -158,5 +225,24 @@ p, a, button, h1, h2, h3, h4, h5, h6, span {
         max-width: 600px;
         width: 100%;
         
+    }
+    .footer {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 48px; /* Adjust padding for smaller screens */
+    }
+
+    .foot-about,
+    .foot_links,
+    .contact {
+        margin: 20px 0; /* Adds space between stacked elements */
+    }
+
+    .foot-logo {
+        flex-direction: column; /* Adjusts logo layout for small screens */
+        align-items: flex-start;
+    }
+
+    .contact a img {
+        margin-right: 5px;
     }
   }
