@@ -83,7 +83,7 @@ body, html {
 .curriculum{
     background-image: url(./assets/bg.png);
     text-align: center;
-    padding: 0 96px 0 96px;
+    padding: 0 96px 50px 96px;
 }
 .card-heading{
     padding: 40px 0 40px 0;
@@ -280,7 +280,7 @@ p, a, button, h1, h2, h3, h4, h5, h6, span {
         font-size: 15px;
         padding-top: 5px;
     }
-    .banner-image{
+    .banner-image img{
         display: block;
         margin: 0 auto;
         max-width: 500px;
