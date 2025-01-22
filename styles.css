@@ -81,7 +81,7 @@ body, html {
     cursor: pointer;
 }
 .curriculum{
-    background-image: url(./assets/bg.png);
+    background-image: url(./assets/bg.png), linear-gradient(white, #ebeb71);
     text-align: center;
     padding: 0 96px 50px 96px;
 }
@@ -207,8 +207,116 @@ body, html {
     margin-right: 10px;
 }
 
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 8px;
+  }
+  
+.right {
+    margin: 20px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+.left {
+    margin: 20px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
+.next{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+.dir{
+    height: 60px;
+    width: 60px;
+    margin: 0 10px 0 10px;
+    border-radius: 50%;
+    background-color: orange;
+}
+.dir:hover{
+    background-color: #01acfd;
+}
+.grid-container{
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+    "big-card middle-part1 side1"
+    "big-card middle-part2 side2";
+}
+.big-card{
+    grid-area: big-card;
+    background-color: white;
+    border-radius: 10px;
+}
+.big-card span{
+    background-color: skyblue;
+    /* margin-left: -10px; */
+    /* margin-top: -10px; */
+    padding: 10px;
+    border-radius: 20px;
 
 
+}
+.big-card img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* height: 100%; */
+    object-fit: cover;
+}
+
+.middle-part1{
+    grid-area: middle-part1;
+    background-color: white;
+    border-radius: 10px;
+}
+.middle-part1 img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* height: 100%; */
+    object-fit: cover;
+}
+.middle-part2{
+    grid-area: middle-part2;
+    background-color: white;
+    border-radius: 10px;
+}
+.middle-part2 img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* height: 100%; */
+    object-fit: cover;
+}
+.side1{
+    grid-area: side1;
+    background-color: white;
+    border-radius: 10px;
+}
+.side1 img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* height: 100%; */
+    object-fit: cover;
+}
+.side2{
+    grid-area: side2;
+    background-color: white;
+    border-radius: 10px;
+}
+.side2 img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /* height: 100%; */
+    object-fit: cover;
+}
 p, a, button, h1, h2, h3, h4, h5, h6, span {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
